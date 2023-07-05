@@ -1,3 +1,4 @@
+@icon("impl_icon.svg")
 class_name FunctionImpl
 extends Resource
 
