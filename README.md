@@ -9,7 +9,7 @@ External script editor is recommended. Godot editor does not recognize .impl as 
 1. Activate this plugin. `res://secret` and encryption keys are generated.
 2. Write function definitions and variables etc... to .gd file.
 `call_impl()` accepts 3 arguments: method name, object, and arguments(optional).
-If your need more arguments, pass array or dictionary.
+If you need more arguments, pass array or dictionary.
 ```gdscript
 extends Node
 
@@ -33,7 +33,7 @@ func _ready(this:Object,_args):
     this.variable=1
 
 
-func function(this:Object,args):
+func function(_this:Object,args):
     print(args)
 ```
 4. .impl is encrypted and decrypted when loaded.
