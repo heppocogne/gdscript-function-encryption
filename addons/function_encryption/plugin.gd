@@ -11,7 +11,9 @@ func _enter_tree():
 	if !ProjectSettings.has_setting("function_encryption/key_length"):
 		ProjectSettings.set_setting("function_encryption/key_length",4096)
 	_key_length=ProjectSettings.get_setting("function_encryption/key_length")
-	_generate_key()
+	var dir:=DirAccess.open("res://secret")
+	if dir==null or !dir.file_exists("id_rsa.pub") or !dir.file_exists("id_rsa.key"):
+		_generate_key()
 	project_settings_changed.connect(_on_project_settings_changed)
 
 
