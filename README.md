@@ -1,7 +1,7 @@
 # gdscript-function-encryption
 Encrypt GDScript funcrion implementations easier  
 
-__Note that this is not a safe way to protect your codes because .pck and .zip includes raw encryption keys.__  
+__Note that this is not a safe way to protect your codes because .pck includes raw encryption keys.__  
 __Use [pck encryption](https://docs.godotengine.org/en/stable/contributing/development/compiling/compiling_with_script_encryption_key.html) if you need stronger protection.__
 
 ## Usage
