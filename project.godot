@@ -10,15 +10,15 @@ config_version=5
 
 [application]
 
-config/name="FunctionImpl"
+config/name="FunctionEncryption"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/function_impl/plugin.cfg")
+enabled=PackedStringArray("res://addons/function_encryption/plugin.cfg")
 
-[function_impl]
+[function_encryption]
 
 key_length=4096

@@ -8,9 +8,9 @@ var _key_length:int
 
 func _enter_tree():
 	add_import_plugin(import_plugin)
-	if !ProjectSettings.has_setting("function_impl/key_length"):
-		ProjectSettings.set_setting("function_impl/key_length",4096)
-	_key_length=ProjectSettings.get_setting("function_impl/key_length")
+	if !ProjectSettings.has_setting("function_encryption/key_length"):
+		ProjectSettings.set_setting("function_encryption/key_length",4096)
+	_key_length=ProjectSettings.get_setting("function_encryption/key_length")
 	_generate_key()
 	project_settings_changed.connect(_on_project_settings_changed)
 
